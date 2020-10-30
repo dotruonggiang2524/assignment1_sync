@@ -86,9 +86,7 @@ void *update_student_infor(Student *student_information)
     fprintf(fp, "%s\n", email_mess);
     fclose(fp);
 
-    sprintf(cmd, "sendmail -v %s < %s", recipient, tempMailFile);
-    // printf("%s\n", email_mess);
-    // printf("%s\n", cmd);
+    // sprintf(cmd, "sendmail %s < %s", recipient, tempMailFile);
     system(cmd);
 }
 
