@@ -1,5 +1,5 @@
-### Bai tap 1.
+### Bài tập 1.
 
-Tep `assignment1.c` bao gom toan bo ma nguon cua bai tap nay. Trong do, ham `update_student_info` thuc hien cong viec cap nhat thong tin sinh vien va gui mail cho nguoi dung. Viec cap nhat thong tin xay ra trong critical section, viec gui mail nam ngoai critical section.
+Tệp `assignment1.c` bao gồm toàn bộ mã nguồn của bài tập này. Trong đó, hàm `update_student_info` thực hiện công việc cập nhật thông tin sinh viên, và gửi mail thông báo cho người dùng. Tác vụ cập nhật thông tin xảy ra trong vùng có nguy cơ tranh chấp (*critical section*), còn tác vụ gửi mail nằm ngoài vùng này.
 
-Anh `ket-qua.jpg` la minh chung ket qua cua bai tap nay. Trong anh nay, phia tren la ket qua cua cong viec gui mail thong bao cho nguoi dung biet nhung thong tin nao da duoc thay doi; phia duoi la thong tin duoc dua ra tren terminal khi chay chuong trinh.
+Ảnh `ket-qua.jpg` là minh chứng kết quả của bài tập này. Trong ảnh này, phía trên là kết quả công việc gửi mail thông báo những trường thông tin nào đã được thay đổi bởi **Thread** nào; phía dưới là thông tin được đưa ra trên Terminal khi chạy chương trình.
